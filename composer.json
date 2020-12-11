@@ -1,0 +1,15 @@
+{
+  "name": "effulgentsia/staged-composer-update",
+  "type": "composer-plugin",
+  "require": {
+    "composer-plugin-api": "^2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Effulgentsia\\StagedComposerUpdate\\": "src/"
+    }
+  },
+  "extra": {
+    "class": "Effulgentsia\\StagedComposerUpdate\\Plugin"
+  }
+}
