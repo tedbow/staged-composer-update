@@ -34,11 +34,9 @@ class StagedUpdateCommand extends BaseCommand {
     $child_app->setAutoExit(false);
     $child_input = new ArrayInput(
       [
-      'command' => 'update',
+      'command' => 'require',
       'packages' => $input->getArgument('packages'),
-      '--prefer-lowest' => $input->getOption('prefer-lowest')
-      ],
-      $this->getDefinition()
+      ]
     );
     $result = $child_app->run($child_input, $output);
 
